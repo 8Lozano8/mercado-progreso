@@ -1,0 +1,75 @@
+.contenedor-servicios-resumen {
+    background-color: black;
+    height: auto;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* Crea 6 columnas de igual tamaño */
+    gap: 0px;
+    /* Espacio entre las columnas */
+}
+
+.servicios {
+    width: 100%;
+    height: 200px;
+}
+
+.grid-item {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Negro transparente con opacidad 0.5 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Inicialmente invisible */
+    transition: opacity 0.3s ease-in-out;
+    /* Agrega una transición suave a la opacidad */
+}
+
+.descripcion {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+.descripcion small {
+    font-size: 12px;
+}
+
+@media (max-width: 1440px) {
+    .grid-container {
+        height: 100px;
+        /* Cambia a 3 columnas en pantallas de tabletas */
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        /* Cambia a 3 columnas en pantallas de tabletas */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* 1 columna en móviles */
+    }
+}

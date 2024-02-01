@@ -1,0 +1,17 @@
+---
+import AnunciosResumen from "../components/AnunciosResumen.astro";
+import Carrusel from "../components/Carrusel.astro";
+import Mapa from "../components/Mapa.astro";
+import NosotrosResumen from "../components/NosotrosResumen.astro";
+import ServiciosResumen from "../components/ServiciosResumen.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Página de inicio";
+
+---
+<BaseLayout pageTitle={pageTitle}>
+	<Carrusel />
+	<NosotrosResumen />
+	<ServiciosResumen />
+	<AnunciosResumen />
+	<Mapa />
+</BaseLayout>

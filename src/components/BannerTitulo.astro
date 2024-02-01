@@ -1,0 +1,11 @@
+---
+import Banner from "../../images/tiendas-banner.jpg";
+import "../styles/BannerTitulo.css";
+const { tituloBanner } = Astro.props;
+---
+
+<figure class="contenedor-figura">
+    <img class="banner-mercado" src={Banner.src} alt="Servicios" />
+    <div class="fondo-negro"></div>
+    <h1 class="titulo-banner">{tituloBanner}</h1>
+</figure>

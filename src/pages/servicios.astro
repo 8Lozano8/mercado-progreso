@@ -1,0 +1,11 @@
+---
+import BannerTitulo from "../components/BannerTitulo.astro";
+import ServiciosPg from "../components/ServiciosPg.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Servicios";
+const tituloBanner = "SERVICIOS"
+---
+<BaseLayout pageTitle={pageTitle}>
+	<BannerTitulo tituloBanner={tituloBanner}/>
+	<ServiciosPg />
+</BaseLayout>

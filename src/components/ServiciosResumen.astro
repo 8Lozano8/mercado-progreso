@@ -1,0 +1,74 @@
+---
+import FrutasVerduras from '../../images/tienda-verduras.jpg'
+import Abarrotes from '../../images/tienda-abarrotes.jpg'
+import Carnes from '../../images/tienda-carnes.jpg'
+import Utiles from '../../images/tienda-libreria.jpg'
+import Costura from '../../images/tienda-costura.png'
+import Ropa from '../../images/tienda-ropa.png'
+import '../styles/ServiciosResumen.css'
+---
+
+<div class="contenedor-servicios-resumen">
+    <div class="grid-container">
+        <div class="grid-item">
+            <figure>
+                <img class="servicios" src={FrutasVerduras.src} alt="Frutas y verduras">
+                <div class="overlay"></div>
+            </figure>
+            <p class="descripcion"><strong>FRUTAS Y VERDURAS</strong>
+                <br>
+                <small>Frescos y de estación</small>
+            </p>
+        </div>
+        <div class="grid-item">
+            <figure>
+                <img class="servicios" src={Abarrotes.src} alt="Abarrotes">
+                <div class="overlay"></div>
+            </figure>
+            <p class="descripcion"><strong>ABARROTES</strong>
+                <br>
+                <small>Frescos y de estación</small>
+            </p>
+        </div>
+        <div class="grid-item">
+            <figure>
+                <img class="servicios" src={Carnes.src} alt="Carnes">
+                <div class="overlay"></div>
+            </figure>
+            <p class="descripcion"><strong>CARNES</strong>
+                <br>
+                <small>Sabor suave y olor fresco</small>
+            </p>
+        </div>
+        <div class="grid-item">
+            <figure>
+                <img class="servicios" src={Utiles.src} alt="Útiles escolares">
+                <div class="overlay"></div>
+            </figure>
+            <p class="descripcion"><strong>ÚTILES ESCOLARES</strong>
+                <br>
+                <small>De alta calidad</small>
+            </p>
+        </div>
+        <div class="grid-item">
+            <figure>
+                <img class="servicios" src={Costura.src} alt="Costura">
+                <div class="overlay"></div>
+            </figure>
+            <p class="descripcion"><strong>COSTURA</strong>
+                <br>
+                <small>Profesional</small>
+            </p>
+        </div>
+        <div class="grid-item">
+            <figure>
+                <img class="servicios" src={Ropa.src} alt="Ropa">
+                <div class="overlay"></div>
+            </figure>
+            <p class="descripcion"><strong>ROPA</strong>
+                <br>
+                <small>Cómoda</small>
+            </p>
+        </div>
+      </div>
+</div>
