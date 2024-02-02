@@ -3,7 +3,9 @@
     margin-bottom: 100px;
 }
 .imagen-puesto {
-    height: 250px;
+    height: 150px;
+    border-radius: 10px;
+    margin-top: 50px;
     margin-right: 50%;
     margin-left: 25%;
 }
@@ -23,7 +25,7 @@
 
 @media (max-width: 1024px) {
     .imagen-puesto {
-        width: 100%;
+        width: 250px;
         margin-right: 50%;
         margin-left: 10%;
     }
@@ -32,9 +34,10 @@
 @media (max-width: 768px) {
     .imagen-puesto {
         width: 100%;
-        height: 100%;
+        height: 400px;
         margin-right: 0%;
         margin-left: 0%;
+        
     }
 }
 
@@ -46,6 +49,14 @@
 
     .sarita-descripcion{
         text-align: justify;
+    }
+}
+
+@media (max-width: 425px) {
+    .imagen-puesto {
+        width: 100%;
+        height: 300px;
+        margin: 0 auto;
     }
 }
 
@@ -62,7 +73,8 @@
 
 @media (max-width: 320px) {
     .imagen-puesto {
-        width: 300px;
+        width: 100%;
+        height: 200px;
         margin: 0 auto;
     }
 
